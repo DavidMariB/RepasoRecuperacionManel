@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dmb.repasorecuperacionmanel.FragmentHobbies"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aficiones"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lectura:"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libros"/>
+
+            <RadioButton
+                android:id="@+id/rbMagazines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revistas"/>
+
+            <RadioButton
+                android:id="@+id/rbSocialNetworks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redes Sociales"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntuación:"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSaveHobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
